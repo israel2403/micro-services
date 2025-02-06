@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CardsApplication<cards>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.huerta.cards.CardsApplication",
+            "projectName": "cards",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AccountsApplication<accounts>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.huerta.accounts.AccountsApplication",
+            "projectName": "accounts",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

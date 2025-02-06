@@ -1,0 +1,33 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: accounts
+  datasource:
+    url: jdbc:h2:mem:accountsdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+  flyway:
+    baseline-on-migrate: true
+    url: jdbc:h2:mem:accountsdb
+    user: sa
+    password: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+data:
+  savings: "SAVINGS"
+  address: "123 Main Street, New York"
+errors:
+  STATUS_500: "An error accurred. Please try again or contact support."
+  CUSTUMER_ALREADY_EXISTS: "Customer already exists registered with given mobile number"
+success:
+  MESSAGE_201: "Account created successfully"
+  MESSAGE_200: "Account processed successfully"
+
