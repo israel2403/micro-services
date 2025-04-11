@@ -11,6 +11,6 @@ public class CardRequest {
 
   @Schema(description = "Mobile number", example = "1234567890")
   @NotEmpty(message = "Mobile number is required")
-  @Pattern(regexp = "^$|[0-9]{10}", message = "Mobile number must be 10 digits")
+  @Pattern(regexp = "^[0-9]{10}$", message = "Mobile number must be 10 digits")
   private String mobileNumber;
 }
