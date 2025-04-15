@@ -38,11 +38,12 @@ public class ErrorConstantsTest {
   public void tesInvalidtCardPhoneNumberError() {
     String expected =
         "{\n"
-            + "  \"apiPath\": \"/api/v1/cards\",\n"
-            + "  \"errorCode\": \"400\",\n"
-            + "  \"errorMessage\": \"Invalid card phone number\",\n"
-            + "  \"errorTime\": \"2023-06-26T10:00:00\",\n"
-            + "  \"errors\": []\n"
+            + "  \"cardNumber\": \"1234567890123456\",\n"
+            + "  \"cardType\": \"Credit Card\",\n"
+            + "  \"mobileNumber\": \"1234567890\",\n"
+            + "  \"totalLimit\": 20000,\n"
+            + "  \"amountUsed\": 1000,\n"
+            + "  \"availableAmount\": 19000\n"
             + "}";
     assertEquals(expected, ErrorConstants.INVALID_CARD_PHONE_NUMBER);
   }

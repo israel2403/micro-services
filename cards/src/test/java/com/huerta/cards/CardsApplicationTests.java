@@ -12,13 +12,14 @@ public class CardsApplicationTests {
 
   @Test
   public void contextLoads() {
-    try (ConfigurableApplicationContext context = SpringApplication.run(CardsApplication.class, "--server.port=0")) {
+    try (ConfigurableApplicationContext context =
+        SpringApplication.run(CardsApplication.class, "--server.port=0")) {
       assertNotNull(context);
     }
   }
 
   @Test
   public void main() {
-    CardsApplication.main(new String[] { "--server.port=0" });
+    CardsApplication.main(new String[] {"--server.port=0"});
   }
 }
